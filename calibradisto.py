@@ -221,13 +221,13 @@ ctypes.windll.shcore.SetProcessDpiAwareness(1)
 root = tk.Tk()
 
 #set application icon
-if os.path.exists("icon/Calibradisto_icon.ico"):
+if os.path.exists("icon/calibradisto_icon.ico"):
     #this case will be executed when the application is run from the .py file
-    root.iconbitmap("icon/Calibradisto_icon.ico")
-elif os.path.exists("_internal/icon/Calibradisto_icon.ico"):
+    root.iconbitmap("icon/calibradisto_icon.ico")
+elif os.path.exists("_internal/icon/calibradisto_icon.ico"):
     #this case will be executed when the application is run from a .exe file
     #generated with pyinstaller
-    root.iconbitmap("_internal/icon/Calibradisto_icon.ico")
+    root.iconbitmap("_internal/icon/calibradisto_icon.ico")
 
 soft_dir = os.getcwd()
 app = Application(master=root, program_dir=soft_dir)
